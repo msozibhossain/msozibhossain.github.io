@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="license" content="CC-BY-SA-4.0">
+  
+  <!-- Title -->
+  <title>Publications - Md. Sozib Hossain</title>
+
+  <!-- Licence -->
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+
+  <!-- Meta description for SEO -->
+  <meta name="description" content="Research publications of Md. Sozib Hossain - Lecturer, Department of CSE, RUET, Bangladesh.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Montserrat font classes */
+    .montserrat-regular { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; }
+    .montserrat-medium { font-family: "Montserrat", sans-serif; font-weight: 500; font-style: normal; }
+    .montserrat-semibold { font-family: "Montserrat", sans-serif; font-weight: 600; font-style: normal; }
+    .montserrat-bold { font-family: "Montserrat", sans-serif; font-weight: 700; font-style: normal; }
+
+    /* Reset and body */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Montserrat", sans-serif; font-weight: 400; background-color: #ffffff; color: #000000; line-height: 1.6; }
+
+    h1 { font-weight: 600; }
+    h2 { font-weight: 500; }
+    a { text-decoration: none; color: #007BFF; transition: color 0.3s; }
+    a:hover { color: #0056cc; }
+
+    main { max-width: 1100px; margin: 2rem auto; padding: 1rem; }
+
+    /* Navbar */
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .navbar-center { text-align: center; flex: 1; }
+    .nav-link { text-decoration: none; color: black; font-weight: 500; }
+    .nav-link:hover { color: #007BFF; }
+    .last-updated { font-size: 0.9rem; color: #555; }
+
+.publications {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.publications h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.pub-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px;   /* reduced width */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.pub-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-card h2 a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.pub-card h2 a:hover {
+  text-decoration: underline;
+}
+.research-interests {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.research-interests h1 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.interests-list span {
+  background: #e8f0fe; /* near white blue */
+  color: #1a73e8;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  cursor: default;
+}
+
+.interests-list span:hover {
+  background: #d2e3fc;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007BFF; /* Blue accent */
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .cv-button:hover {
+    color: #fff;
+    background-color: #0056cc;
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+.paper-badge {
+  display: inline-block;
+  background: #f1f3f4; /* near white gray */
+  color: #444;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  margin-top: 0.5rem;
+}
+
+    /* Footer */
+    footer { background: #f8f9fa; border-top: 1px solid #ddd; padding: 20px; text-align: center; color: #555; margin-top: 3rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .navbar-right, .navbar-center, .navbar-left {
+        order: unset;
+        width: 100%;
+        text-align: center;
+      }
+      .navbar-right { order: -1; }
+      .navbar-center { order: 0; }
+      .navbar-left { order: 1; }
+.interests-list {
+    flex-direction: column;
+    align-items: center;
+  }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav style="background: white; border-bottom: 1px solid #ddd; padding: 1rem;">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i> Home</a>
+      </div>
+      <div class="navbar-center">
+        <span class="nav-name montserrat-semibold">Md. Sozib Hossain</span>
+      </div>
+      <div class="navbar-right">
+        <span class="last-updated">Last updated on: Sep 04, 2025</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+<section class="research-interests">
+  <h1>Research Interests</h1>
+  <div class="interests-list">
+    <span>Deep Learning</span>
+    <span>Digital Image Processing</span>
+    <span>Biomedical</span>
+  </div>
+</section>
+
+
+  <section class="publications">
+    <h1>Publications</h1>
+
+    <div class="pub-card">
+      <h2>
+        <a href="#" target="_blank" rel="noopener">
+          Hyperparameter Tuned Lightweight CNN-SVM Hybrid Model for Efficient Multi-Class Lung Cancer Classification
+        </a>
+      </h2>
+      <p><strong>Authors:</strong> Md. Sozib Hossain, Md. Ali Hossain and Azmain Yakin Srizon</p>
+      <p><strong>Conference:</strong> IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN), Rangpur, Bangladesh, 2025.</p>
+<span class="paper-badge">Not Published Yet</span>
+    </div>
+
+    <div class="pub-card">
+      <h2>
+        <a href="#" target="_blank" rel="noopener">
+          Patch-Based Lung Nodule Malignancy Classification using Vision Transformer with XAI Interpretation
+        </a>
+      </h2>
+      <p><strong>Authors:</strong> Md. Sozib Hossain, Md. Ali Hossain and Utsha Das</p>
+      <p><strong>Conference:</strong> IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN), Rangpur, Bangladesh, 2025.</p>
+<span class="paper-badge">Not Published Yet</span>
+    </div>
+<div class="pub-card">
+      <h2>
+        <a href="#" target="_blank" rel="noopener">
+          A Low-Cost Model for Lung Nodule Classification from 3D CT Images using the Feature-Fused Orthogonal Views with Parallel 2D CNNs
+        </a>
+      </h2>
+      <p><strong>Authors:</strong> Md. Sozib Hossain, Md. Ali Hossain and Utsha Das</p>
+      <p><strong>Conference:</strong> IEEE International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN), Rangpur, Bangladesh, 2025.</p>
+<span class="paper-badge">Not Published Yet</span>
+    </div>
+<div class="pub-card">
+      <h2>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10800244" target="_blank" rel="noopener">
+          Towards Early Dengue Diagnosis in Bangladesh: A Non-Invasive Prediction Model Based on Symptoms and Local Trends
+        </a>
+      </h2>
+      <p><strong>Authors:</strong> Md Khalid Syfullah, Md Santo Ali, Asfia Moon Oishy, Md Sozib Hossain</p>
+      <p><strong>Conference:</strong> IEEE International Conference on Power, Electrical, Electronics and Industrial Applications (PEEIACON), Rajshahi, Bangladesh, 2024.</p>
+<span class="paper-badge">Published</span>
+    </div>
+  </section>
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="https://scholar.google.com/citations?hl=en&user=6tZx_AsAAAAJ" target="_blank" class="cv-button">Google Scholar Profile</a>
+</div>
+</main>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © <span id="year"></span> Md. Sozib Hossain.  
+      Content licensed under 
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="color: #007BFF; text-decoration: none;">
+        CC BY-SA 4.0
+      </a>.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

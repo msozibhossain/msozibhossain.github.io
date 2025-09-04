@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="license" content="CC-BY-SA-4.0">
+  
+  <!-- Title -->
+  <title>Md. Sozib Hossain</title>
+
+  <!-- Licence -->
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+
+  <!-- Meta description for SEO -->
+  <meta name="description" content="Personal Profile of Md. Sozib Hossain - Lecturer, Department of CSE, RUET, Bangladesh.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+
+  <!-- Google Fonts (Optional, clean & modern look) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Add this inside <head> to use icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+  .montserrat-medium {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+  .montserrat-semibold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+  .montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #007BFF; /* blue accent */
+    text-decoration: none;
+  }
+
+  .cv-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+
+  .bio {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .navbar-left {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #007BFF; /* blue accent */
+  }
+
+  .last-updated {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  /* General row layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .left-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Right align */
+    text-align: right;
+    min-width: 250px;
+  }
+
+  .right-col {
+    flex: 1.5;
+    min-width: 280px;
+  }
+
+  /* Profile picture */
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+    //border: 1px solid #007BFF; /* blue accent */
+  }
+
+  /* Profile links */
+  .profile-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+  }
+
+  .profile-links a {
+    font-weight: 500;
+    color: #007BFF;
+  }
+
+  .profile-links i {
+    margin-right: 0.5rem;
+  }
+
+  /* Text section */
+  .name {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+.boldme{
+font-weight: 600;
+}
+
+  .designation {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+
+  .institution {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Bio container */
+  .bio-container {
+    max-width: 800px; /* Reduced width for readability */
+    margin: 0 auto;
+  }
+
+  .bio {
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+  }
+.cv-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007BFF; /* Blue accent */
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .cv-button:hover {
+    color: #fff;
+    background-color: #0056cc;
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-right {
+      order: -1; /* move to top */
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .navbar-left {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-link {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+    }
+.row-1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .left-col {
+      align-items: center; /* Center align pic and links */
+      text-align: center;
+    }
+
+    .right-col {
+      margin-top: 1rem;
+    }
+
+    .bio-container {
+      padding: 0 1rem;
+    }
+  }
+  </style>
+</head>
+<body>
+  <nav style="background: white; border-bottom: 1px solid #ddd; padding: 1rem;">
+  <div class="navbar-container">
+    <div class="navbar-left">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="teaching.html" class="nav-link">Teaching</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+    </div>
+    <div class="navbar-right">
+      <span class="last-updated">Last updated on: Sep 04, 2025</span>
+    </div>
+  </div>
+</nav>
+<main>
+    <!-- Page content will go here -->
+  <!-- Row 1 -->
+  <section class="row row-1">
+    <!-- Right-aligned Profile Picture -->
+    <div class="column left-col">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <div class="profile-links">
+        <a href="https://www.cse.ruet.ac.bd/md.-sozib-hossain" target="_blank"><i class="fa-solid fa-building"></i></a>
+        <a href="https://scholar.google.com/citations?hl=en&user=6tZx_AsAAAAJ" target="_blank"><i class="fa-brands fa-google"></i></a>
+        <a href="https://github.com/msozibhossain" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mdsozibhossain/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/msozibh" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="column right-col">
+      <h1 class="name">Md. <span class="boldme">Sozib</span> Hossain</h1>
+      <h2 class="designation">Lecturer, <a href="https://www.cse.ruet.ac.bd/">Department of Computer Science & Engineering</a></h2>
+      <p class="institution"><a href="https://www.ruet.ac.bd/">Rajshahi University of Engineering & Technology (RUET)</a></p>
+      <p class="institution">Rajshahi-6204, Bangladesh</p>
+      <p class="institution">Email: <a href="mailto:sozibruet99@gmail.com">sozibruet99@gmail.com</a>,
+      <a href="mailto:sozib.hossain@cse.ruet.ac.bd">sozib.hossain@cse.ruet.ac.bd</a></p>
+    </div>
+  </section>
+
+  <!-- Row 2 -->
+  <section class="row row-2">
+    <div class="bio-container">
+      <p class="bio">
+        I have been serving as a Lecturer in the Department of <a href="https://www.cse.ruet.ac.bd/">Computer Science and Engineering (CSE) at Rajshahi University of Engineering & Technology (RUET)</a>, Bangladesh, since 2024. Previously, I worked as a Lecturer in the Department of <a href="https://baust.edu.bd/cse/">CSE at Bangladesh Army University of Science & Technology (BAUST)</a>, Bangladesh, from 2023 to 2024. During my teaching career, I have conducted several fundamental courses, supervised numerous student projects and theses, and actively contributed to academic activities such as course advising, student consultancy, organizing competitive programming events, and moderating educational clubs.<br><br style="line-height:0.2;">
+
+I am currently pursuing my Master’s degree in CSE at RUET. My ongoing research focuses on designing computer-aided diagnostic (CAD) systems for detecting lung cancer in 3D CT scan images, leveraging deep learning and digital image processing techniques under the supervision of <a href="https://scholar.google.com/citations?hl=en&user=f5-ekd0AAAAJ">Prof. Dr. Md. Rabiul Islam</a> Sir. I completed my Bachelor’s degree in CSE at RUET, where I developed an FPGA-based artificial neural network model for classifying Bengali handwritten digits under the suppervision of <a href="https://www.cse.ruet.ac.bd/mondal">Prof. Dr. Md. Nazrul Islam Mondal</a> Sir.<br><br style="line-height:0.2;">
+
+My research interests include deep learning, digital image processing, and biomedical. Specifically, I aim to develop CAD systems that provide real-time and accurate diagnoses. I am also interested in Explainable AI to enhance the interpretability and trustworthiness of CAD systems, multi-modal CAD systems for more comprehensive results, and federated learning to ensure privacy and security in handling sensitive medical data.
+      </p>
+    </div>
+  </section>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="https://drive.google.com/file/d/1qCdDT0aPGGKXtyYdHAz0vy5KjmASMdat/view?usp=sharing" target="_blank" class="cv-button">View My CV</a>
+</div>
+</main>
+<footer style="background: #f8f9fa; border-top: 1px solid #ddd; padding: 20px; text-align: center; color: #555;">
+  <p>
+    © <span id="year"></span> Md. Sozib Hossain.  
+    Content licensed under 
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="color: #007BFF; text-decoration: none;">
+      CC BY-SA 4.0
+    </a>.
+  </p>
+</footer>
+
+<script>
+  // Automatically updates the year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
