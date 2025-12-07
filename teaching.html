@@ -171,7 +171,7 @@
       <span class="nav-name montserrat-semibold">Md. Sozib Hossain</span>
     </div>
     <div class="navbar-right">
-      <span class="last-updated">Last updated on: Sep 04, 2025</span>
+      <span class="last-updated" id="last-updated">Last updated on: Sep 04, 2025</span>
     </div>
   </div>
 </nav>
@@ -228,8 +228,14 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    fetch('last-updated.txt')
+  .then(r => r.text())
+  .then(t => {
+    document.getElementById('last-updated').textContent = t;
+  });
   </script>
 </body>
 </html>
+
 
 
