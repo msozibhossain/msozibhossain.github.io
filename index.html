@@ -287,7 +287,7 @@ font-weight: 600;
       <a href="more.html" class="nav-link">More</a>
     </div>
     <div class="navbar-right">
-      <span class="last-updated">Last updated on: Sep 04, 2025</span>
+      <span class="last-updated" id="last-updated">Last updated on: Sep 04, 2025</span>
     </div>
   </div>
 </nav>
@@ -359,10 +359,16 @@ I am also actively engaged in extracurricular activities such as supervising und
 <script>
   // Automatically updates the year
   document.getElementById('year').textContent = new Date().getFullYear();
+  fetch('last-updated.txt')
+  .then(r => r.text())
+  .then(t => {
+    document.getElementById('last-updated').textContent = t;
+  });
 </script>
 
 </body>
 </html>
+
 
 
 
